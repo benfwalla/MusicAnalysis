@@ -183,6 +183,7 @@ def get_topic_analysis(songs_df, topic_labels, topics_matrix, artist_name, album
         if col != 'Album':
             plt.plot(album_topics['Album'], album_topics[col], label=col, linewidth=4.0)
 
+    plt.title("Topic Modeling over {}'s Discography".format(artist_name))
     plt.xlabel("Albums")
     plt.xticks(rotation=85)
     plt.grid(True)
